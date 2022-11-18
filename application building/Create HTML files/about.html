@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arrhythmia Classification</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+#myVideo {
+  position: fixed;
+  
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+#text{
+  align-content: center;
+  color: aliceblue;
+  margin: 20% 20% 20% 20%;
+  padding: 20px 20px 20px 20px;
+  background-color: rgba(0, 0,0,.5);
+  width:20% 20%
+  
+  
+}
+</style>
+</head>
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="static/ecg.mp4" type="video/mp4">
+  </video>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <div class="w3-bar-item w3">ECG arrhythmia Classification</div>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="{{ url_for('home') }}" class="w3-bar-item w3-button">Home</a>
+      <a href="{{ url_for('information') }}" class="w3-bar-item w3-button">Info</a>
+      <a href="{{ url_for('test') }}" class="w3-bar-item w3-button">Predict</a>
+    </div>
+  </div>
+</div>
+
+<div id="text">
+    <h1 style="text-align:center ;">ECG</h1>
+    <p style="font-size:20px ;">A heart arrhythmia is an irregular heartbeat. Heart rhythm problems occur when the electrical signals that coordinate the heart's beats don't work properly. The faulty signaling causes the heart to beat too fast, too slow or irregularly.
+      <br><br>
+      Heart arrhythmias may feel like a fluttering or racing heart and may be harmless. However, some heart arrhythmias may cause bothersome — sometimes even life-threatening — signs and symptoms.
+      <br><br>
+      However, sometimes it's normal for a person to have a fast or slow heart rate. For example, the heart rate may increase with exercise or slow down during sleep.
+      <br><br>
+      Heart arrhythmia treatment may include medications, catheter procedures, implanted devices or surgery to control or eliminate fast, slow or irregular heartbeats. A heart-healthy lifestyle can help prevent heart damage that can trigger certain heart arrhythmias.
+    </p>
+</div>
+
+
+
+</body>
+</html>
